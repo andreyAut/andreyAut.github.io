@@ -7,178 +7,72 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background-color: #121212; /* Fundo preto suave */
-      color: #f8f9fa; /* Texto branco */
-    }
-
-    header {
-      background-color: #343a40; /* Fundo escuro para o cabeçalho */
-      color: #f8f9fa;
-    }
-
-    .btn-light, .btn-outline-primary {
-      background-color: #0d6efd; /* Azul escuro para botões */
-      border-color: #0d6efd;
-    }
-
-    .btn-light:hover, .btn-outline-primary:hover {
-      background-color: #0a58ca; /* Tom mais forte de azul ao passar o mouse */
-      border-color: #0a58ca;
-    }
-
-    .card, .section {
-      background-color: #343a40; /* Cards e seções com fundo cinza escuro */
-    }
-
-    .card-header, .section h2 {
-      background-color: #0d6efd; /* Azul para cabeçalhos e destaque */
-      color: #f8f9fa;
-    }
-
-    .test-animation {
-      background-color: #343a40; /* Cor do ícone de animação */
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    h2, .lead {
-      color: #f8f9fa; /* Texto claro para títulos */
-    }
-
-    .icon {
-      font-size: 60px;
-      color: #0d6efd;
-    }
-
-    .btn-outline-primary {
-      color: #0d6efd;
-      border-color: #0d6efd;
-    }
-
-    .btn-outline-primary:hover {
-      background-color: #0d6efd;
-      color: #fff;
-    }
-
-    .rocket-animation {
-      font-size: 80px;
-      color: #0d6efd;
-      animation: rocketMove 3s ease-in-out infinite;
-    }
-
-    @keyframes rocketMove {
-      0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
-      100% {
-        transform: translateY(0);
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
-  <header class="text-center py-5">
-    <h1 class="display-4 font-weight-bold" data-aos="fade-down">Olá, sou [Seu Nome]</h1>
-    <p class="lead" data-aos="fade-up" data-aos-delay="300">Profissional de QA | Automação de Testes</p>
-    <div class="rocket-animation test-animation" data-aos="zoom-in" data-aos-delay="600">
-      <i class="fas fa-rocket"></i>
-    </div>
+  <header>
+    <h1>Olá, sou [Seu Nome]</h1>
+    <p>Profissional de QA | Automação de Testes</p>
   </header>
 
-  <section id="sobre-mim" class="container my-5" data-aos="fade-up">
-    <h2 class="text-center mb-4">Sobre Mim</h2>
-    <p class="lead text-muted text-center">Sou um profissional de QA com [X anos] de experiência. Tenho uma abordagem focada em qualidade e eficiência, implementando automação de testes e boas práticas no ciclo de vida de software. Acredito no poder da automação para melhorar a qualidade e entregar produtos de alta performance.</p>
-    <div class="d-flex justify-content-center mt-4">
-      <a href="[link do currículo]" class="btn btn-success btn-lg mr-3"><i class="fas fa-download"></i> Baixar Currículo</a>
-      <a href="#contato" class="btn btn-outline-primary btn-lg"><i class="fas fa-envelope"></i> Entrar em Contato</a>
-    </div>
+  <!-- Seção Sobre Mim -->
+  <section class="section" id="sobre-mim" data-aos="fade-up">
+    <h2>Sobre Mim</h2>
+    <p>Sou um profissional de QA com experiência em automação de testes e garantindo a qualidade em sistemas de software. Estou sempre em busca de aprimorar meus conhecimentos e aplicar as melhores práticas de testes.</p>
+    <a href="seu-curriculo.pdf" class="btn btn-primary">Baixar Currículo</a>
   </section>
 
-  <section id="skills" class="bg-dark py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Minhas Skills</h2>
-      <div class="row text-center">
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-          <i class="fab fa-js-square fa-3x mb-3"></i>
-          <h4>Automação de Testes</h4>
-          <ul class="list-unstyled">
-            <li><i class="fab fa-cypress fa-2x"></i> Cypress</li>
-            <li><i class="fab fa-playwright fa-2x"></i> Playwright</li>
-            <li><i class="fas fa-search fa-2x"></i> Selenium</li>
-          </ul>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
-          <i class="fas fa-puzzle-piece fa-3x mb-3"></i>
-          <h4>CI/CD</h4>
-          <ul class="list-unstyled">
-            <li><i class="fab fa-github fa-2x"></i> GitHub Actions</li>
-            <li><i class="fab fa-docker fa-2x"></i> Docker</li>
-            <li><i class="fas fa-cogs fa-2x"></i> Jenkins</li>
-          </ul>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="700">
-          <i class="fas fa-tools fa-3x mb-3"></i>
-          <h4>Outras Ferramentas</h4>
-          <ul class="list-unstyled">
-            <li><i class="fas fa-puzzle-piece fa-2x"></i> Postman</li>
-            <li><i class="fas fa-chart-line fa-2x"></i> Grafana</li>
-            <li><i class="fas fa-cogs fa-2x"></i> Pact.js</li>
-          </ul>
-        </div>
+  <!-- Seção de Skills -->
+  <section class="section" id="skills" data-aos="fade-up">
+    <h2>Habilidades</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <i class="fas fa-cogs fa-3x"></i>
+        <h4>Automação de Testes</h4>
+        <p>Experiência com ferramentas como Cypress, Selenium, Appium e Playwright.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-server fa-3x"></i>
+        <h4>Testes de API</h4>
+        <p>Testes de APIs com Postman, RestAssured e SoapUI para garantir a integridade de dados.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-git fa-3x"></i>
+        <h4>Controle de Versão</h4>
+        <p>Uso de Git e GitHub para versionamento e controle de código em projetos colaborativos.</p>
       </div>
     </div>
   </section>
 
-  <section id="educacao" class="container my-5" data-aos="fade-up">
-    <h2 class="text-center mb-4">Minha Educação</h2>
-    <ul class="list-unstyled">
-      <li><strong>Bacharelado em Ciência da Computação</strong> - Universidade XYZ, [Ano de Conclusão]</li>
-      <li><strong>Certificação em Automação de Testes</strong> - Instituição ABC, [Ano]</li>
+  <!-- Seção de Experiência -->
+  <section class="section" id="experiencia" data-aos="fade-up">
+    <h2>Experiência Profissional</h2>
+    <ul>
+      <li><strong>Empresa 1:</strong> Descrição da função e projetos relevantes.</li>
+      <li><strong>Empresa 2:</strong> Descrição da função e projetos relevantes.</li>
     </ul>
   </section>
 
-  <section id="experiencias" class="bg-dark text-light py-5" data-aos="fade-up">
-    <div class="container">
-      <h2 class="text-center mb-4">Experiência Profissional</h2>
-      <ul class="list-unstyled">
-        <li><strong>Empresa 1</strong> - Descrição da função <i class="fas fa-briefcase"></i></li>
-        <li><strong>Empresa 2</strong> - Descrição da função <i class="fas fa-briefcase"></i></li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="projetos" class="bg-dark text-light py-5" data-aos="fade-up">
-    <div class="container">
-      <h2 class="text-center mb-4">Meus Projetos</h2>
-      <div class="row">
-        <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="card bg-secondary text-light">
-            <div class="card-header">
-              <h5>Projeto 1 - Automação de Testes</h5>
-            </div>
-            <div class="card-body">
-              <p class="card-text">Este projeto envolve a automação de testes E2E usando Cypress para uma aplicação web. Ele cobre testes de fluxo completo, integrando com o CI/CD.</p>
-              <a href="https://github.com/seuusuario/projeto1" class="btn btn-outline-primary"><i class="fas fa-link"></i> Acessar no GitHub</a>
-            </div>
-          </div>
+  <!-- Seção de Projetos -->
+  <section class="section" id="projetos" data-aos="fade-up">
+    <h2>Meus Projetos</h2>
+    <div class="card-group">
+      <div class="card">
+        <div class="card-header">
+          <h5>Projeto 1 - Automação de Testes</h5>
         </div>
-        <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
-          <div class="card bg-secondary text-light">
-            <div class="card-header">
-              <h5>Projeto 2 - Testes de API</h5>
-            </div>
-            <div class="card-body">
-              <p class="card-text">Projeto focado em testes de APIs RESTful com Postman, automatizando os testes de integração e garantindo a integridade dos dados.</p>
-              <a href="https://github.com/seuusuario/projeto2" class="btn btn-outline-primary"><i class="fas fa-link"></i> Acessar no GitHub</a>
-            </div>
-          </div>
+        <div class="card-body">
+          <p>Projeto focado em automação de testes de UI e integração com Jenkins.</p>
+          <a href="https://github.com/seuusuario/projeto1" class="btn btn-outline-primary"><i class="fas fa-link"></i> Acessar no GitHub</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h5>Projeto 2 - Testes de APIs</h5>
+        </div>
+        <div class="card-body">
+          <p>Projeto focado em testes de APIs RESTful com Postman, automatizando os testes de integração.</p>
+          <a href="https://github.com/seuusuario/projeto2" class="btn btn-outline-primary"><i class="fas fa-link"></i> Acessar no GitHub</a>
         </div>
       </div>
     </div>
@@ -191,10 +85,13 @@
     <a href="mailto:seuemail@exemplo.com" class="btn btn-light btn-lg"><i class="fas fa-envelope"></i> Enviar Mensagem</a>
   </section>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 [Seu Nome]. Todos os direitos reservados.</p>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script src="../js/scripts.js"></script>
 </body>
 </html>
