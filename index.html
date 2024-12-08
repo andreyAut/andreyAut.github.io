@@ -4,36 +4,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio de QA</title>
+  <!-- Link para o Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Olá, sou Andrey</h1>
+
+  <!-- Cabeçalho -->
+  <header class="bg-primary text-white text-center py-5">
+    <h1>Olá, sou [Seu Nome]</h1>
     <p>Profissional de QA | Automação de Testes</p>
+    <a href="#sobre-mim" class="btn btn-light">Saiba Mais</a>
   </header>
   
-  <section id="experiencia">
-    <h2>Experiência Profissional</h2>
+  <!-- Sobre Mim -->
+  <section id="sobre-mim" class="container my-5">
+    <h2>Sobre Mim</h2>
+    <p>Sou um profissional de QA com [X anos] de experiência na área. Tenho paixão por automação de testes e garantia de qualidade. Ao longo da minha carreira, trabalhei em diversos projetos usando ferramentas como Cypress, Playwright, Pact.js, entre outras.</p>
+    <div class="d-flex justify-content-start">
+      <a href="[link do currículo]" class="btn btn-success mr-3">Baixar Currículo</a>
+      <a href="#contato" class="btn btn-primary">Entrar em Contato</a>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-light py-5">
+    <div class="container">
+      <h2>Minhas Skills</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Testes Automatizados</h4>
+          <ul>
+            <li>Cypress</li>
+            <li>Playwright</li>
+            <li>Testes E2E</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>CI/CD</h4>
+          <ul>
+            <li>GitHub Actions</li>
+            <li>Jenkins</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Outras Ferramentas</h4>
+          <ul>
+            <li>Pact.js</li>
+            <li>Postman</li>
+            <li>Grafana</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Educação -->
+  <section id="educacao" class="container my-5">
+    <h2>Minha Educação</h2>
     <ul>
-      <li>Empresa 1 - Descrição da função</li>
-      <li>Empresa 2 - Descrição da função</li>
+      <li><strong>Bacharelado em Ciência da Computação</strong> - Universidade XYZ, [Ano de Conclusão]</li>
+      <li><strong>Certificação em Automação de Testes</strong> - Instituição ABC, [Ano]</li>
+      <!-- Adicione mais cursos ou certificações aqui -->
     </ul>
   </section>
 
-  <section id="projetos">
-    <h2>Projetos de Automação de Testes</h2>
+  <!-- Experiências -->
+  <section id="experiencias" class="bg-light py-5">
+    <div class="container">
+      <h2>Experiência Profissional</h2>
+      <ul>
+        <li><strong>Empresa 1</strong> - Descrição da função</li>
+        <li><strong>Empresa 2</strong> - Descrição da função</li>
+        <!-- Adicione mais experiências aqui -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="container my-5">
+    <h2>Meus Projetos</h2>
     <ul>
-      <li><a href="">Projeto 1</a></li>
-      <li><a href="">Projeto 2</a></li>
+      <li><a href="https://github.com/seuusuario/projeto1" class="btn btn-outline-primary">Projeto 1</a></li>
+      <li><a href="https://github.com/seuusuario/projeto2" class="btn btn-outline-primary">Projeto 2</a></li>
+      <!-- Adicione mais links de projetos aqui -->
     </ul>
   </section>
-  
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Email: /p>
-    <p>LinkedIn: <a href="">seuusuario</a></p>
+
+  <!-- Contato -->
+  <section id="contato" class="bg-primary text-white py-5 text-center">
+    <h2>Entre em Contato</h2>
+    <p>Email: seuemail@example.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/seuusuario" class="text-white">seuusuario</a></p>
+    <p>GitHub: <a href="https://github.com/seuusuario" class="text-white">seuusuario</a></p>
   </section>
-  
-  <script src="scripts.js"></script>
+
+  <!-- Scripts do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
