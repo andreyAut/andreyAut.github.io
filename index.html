@@ -12,20 +12,50 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <!-- Link para o CSS personalizado -->
   <link rel="stylesheet" href="style.css">
+  <!-- Animações personalizadas -->
+  <style>
+    /* Animação de Teste Automático */
+    @keyframes run-test {
+      0% { left: -50px; opacity: 0; }
+      50% { left: 50%; opacity: 1; }
+      100% { left: 100%; opacity: 0; }
+    }
+    
+    .test-animation {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background-color: #17a2b8;
+      border-radius: 50%;
+      animation: run-test 5s infinite ease-in-out;
+    }
+
+    .test-animation .icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      color: white;
+    }
+
+  </style>
 </head>
 <body class="bg-dark text-light">
 
   <!-- Cabeçalho -->
   <header class="bg-primary text-white text-center py-5">
-    <h1 class="display-4 font-weight-bold" data-aos="fade-down">Olá, sou [Seu Nome]</h1>
-    <p class="lead" data-aos="fade-up" data-aos-delay="300">Profissional de QA | Automação de Testes</p>
-    <a href="#sobre-mim" class="btn btn-light btn-lg mt-3" data-aos="zoom-in" data-aos-delay="600">Saiba Mais <i class="fas fa-arrow-down"></i></a>
+    <h1 class="display-4 font-weight-bold" data-aos="fade-down">Olá, sou Andrey</h1>
+    <p class="lead" data-aos="fade-up" data-aos-delay="300"> QA | Automação de Testes</p>
+    <div class="test-animation mt-4" data-aos="zoom-in" data-aos-delay="800">
+      <i class="fas fa-cogs icon"></i>
+    </div>
   </header>
-  
+
   <!-- Sobre Mim -->
   <section id="sobre-mim" class="container my-5" data-aos="fade-up">
     <h2 class="text-center mb-4">Sobre Mim</h2>
-    <p class="lead text-muted text-center">Sou um profissional de QA com [X anos] de experiência. Tenho uma abordagem focada em qualidade e eficiência, implementando automação de testes e boas práticas no ciclo de vida de software. Acredito no poder da automação para melhorar a qualidade e entregar produtos de alta performance.</p>
+    <p class="lead text-muted text-center">Sou um profissional de QA com 7 de experiência. Tenho uma abordagem focada em qualidade e eficiência, implementando automação de testes e boas práticas no ciclo de vida de software. Acredito no poder da automação para melhorar a qualidade e entregar produtos de alta performance.</p>
     <div class="d-flex justify-content-center mt-4">
       <a href="[link do currículo]" class="btn btn-success btn-lg mr-3"><i class="fas fa-download"></i> Baixar Currículo</a>
       <a href="#contato" class="btn btn-primary btn-lg"><i class="fas fa-envelope"></i> Entrar em Contato</a>
@@ -41,27 +71,27 @@
           <i class="fab fa-js-square fa-3x mb-3"></i>
           <h4>Automação de Testes</h4>
           <ul class="list-unstyled">
-            <li><i class="fas fa-check-circle"></i> Cypress</li>
-            <li><i class="fas fa-check-circle"></i> Playwright</li>
-            <li><i class="fas fa-check-circle"></i> Selenium</li>
+            <li><i class="fab fa-cypress fa-2x"></i> Cypress</li>
+            <li><i class="fab fa-playwright fa-2x"></i> Playwright</li>
+            <li><i class="fas fa-search fa-2x"></i> Selenium</li>
           </ul>
         </div>
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
           <i class="fas fa-puzzle-piece fa-3x mb-3"></i>
           <h4>CI/CD</h4>
           <ul class="list-unstyled">
-            <li><i class="fab fa-github fa-lg"></i> GitHub Actions</li>
-            <li><i class="fab fa-docker fa-lg"></i> Docker</li>
-            <li><i class="fas fa-cogs fa-lg"></i> Jenkins</li>
+            <li><i class="fab fa-github fa-2x"></i> GitHub Actions</li>
+            <li><i class="fab fa-docker fa-2x"></i> Docker</li>
+            <li><i class="fas fa-cogs fa-2x"></i> Jenkins</li>
           </ul>
         </div>
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="700">
           <i class="fas fa-tools fa-3x mb-3"></i>
           <h4>Outras Ferramentas</h4>
           <ul class="list-unstyled">
-            <li><i class="fas fa-check-circle"></i> Postman</li>
-            <li><i class="fas fa-check-circle"></i> Grafana</li>
-            <li><i class="fas fa-check-circle"></i> Pact.js</li>
+            <li><i class="fas fa-puzzle-piece fa-2x"></i> Postman</li>
+            <li><i class="fas fa-chart-line fa-2x"></i> Grafana</li>
+            <li><i class="fas fa-cogs fa-2x"></i> Pact.js</li>
           </ul>
         </div>
       </div>
@@ -74,7 +104,6 @@
     <ul class="list-unstyled">
       <li><strong>Bacharelado em Ciência da Computação</strong> - Universidade XYZ, [Ano de Conclusão]</li>
       <li><strong>Certificação em Automação de Testes</strong> - Instituição ABC, [Ano]</li>
-      <!-- Adicione mais cursos ou certificações aqui -->
     </ul>
   </section>
 
@@ -85,7 +114,6 @@
       <ul class="list-unstyled">
         <li><strong>Empresa 1</strong> - Descrição da função <i class="fas fa-briefcase"></i></li>
         <li><strong>Empresa 2</strong> - Descrição da função <i class="fas fa-briefcase"></i></li>
-        <!-- Adicione mais experiências aqui -->
       </ul>
     </div>
   </section>
@@ -95,7 +123,6 @@
     <div class="container">
       <h2 class="text-center mb-4">Meus Projetos</h2>
       <div class="row">
-        <!-- Projeto 1 -->
         <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
           <div class="card bg-secondary text-light">
             <div class="card-header">
@@ -108,40 +135,24 @@
           </div>
         </div>
 
-        <!-- Projeto 2 -->
         <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
           <div class="card bg-secondary text-light">
             <div class="card-header">
               <h5>Projeto 2 - Testes de API</h5>
             </div>
             <div class="card-body">
-              <p class="card-text">Este projeto envolve testes de APIs utilizando Postman e Pact.js, para garantir a integração contínua e validação de contratos entre microserviços.</p>
+              <p class="card-text">Este projeto envolve testes de APIs utilizando Postman e Pact.js, para garantir a integridade e o comportamento esperado das APIs.</p>
               <a href="https://github.com/seuusuario/projeto2" class="btn btn-outline-primary"><i class="fas fa-link"></i> Acessar no GitHub</a>
             </div>
           </div>
         </div>
-        <!-- Adicione mais projetos aqui -->
       </div>
-    </div>
-  </section>
-
-  <!-- Testemunhos (opcional) -->
-  <section id="testemunhos" class="container my-5" data-aos="fade-up">
-    <h2 class="text-center mb-4">O que dizem sobre mim</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <blockquote class="blockquote">
-          <p class="mb-0">"[Seu Nome] foi essencial para a melhoria contínua da qualidade de nosso software. A implementação de testes automatizados fez toda a diferença!"</p>
-          <footer class="blockquote-footer">Pessoa Famosa <cite title="Source Title">Empresa XYZ</cite></footer>
-        </blockquote>
-      </div>
-      <!-- Adicione mais testemunhos aqui -->
     </div>
   </section>
 
   <!-- Contato -->
-  <section id="contato" class="bg-primary text-white py-5 text-center">
-    <h2>Entre em Contato</h2>
+  <section id="contato" class="text-center py-5" data-aos="fade-up">
+    <h2>Contato</h2>
     <p class="lead">Se você deseja saber mais ou discutir uma oportunidade de colaboração, entre em contato!</p>
     <a href="mailto:seuemail@exemplo.com" class="btn btn-light btn-lg"><i class="fas fa-envelope"></i> Enviar Mensagem</a>
   </section>
