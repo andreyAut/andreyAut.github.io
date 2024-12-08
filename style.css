@@ -1,12 +1,20 @@
 /* Estilo Geral */
+/* Fundo personalizado com gradientes e padrões */
 body {
-    background: linear-gradient(180deg, #0D1F23, #132E35, #2D4A53, #69818D, #AFB3B7, #5A636A);
+    background-color: #0D1F23; /* Cor base */
+    background-image: 
+      radial-gradient(circle at 30% 30%, rgba(105, 129, 141, 0.6), transparent 70%),
+      radial-gradient(circle at 70% 70%, rgba(173, 179, 183, 0.5), transparent 70%),
+      linear-gradient(120deg, #0D1F23 0%, #132E35 50%, #5A636A 100%);
     background-size: cover;
-    color: #f8f9fa; /* Texto claro para contraste */
+    background-blend-mode: overlay;
+    color: #f8f9fa;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
+  
   
   header {
     text-align: center;
