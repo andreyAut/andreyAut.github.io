@@ -10,83 +10,80 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header>
-    <h1>Olá, sou [Seu Nome]</h1>
-    <p>Profissional de QA | Automação de Testes</p>
+  <!-- Seção de Apresentação -->
+  <header class="text-center py-5">
+    <h1 data-aos="fade-down">Olá, sou [Seu Nome]</h1>
+    <p data-aos="fade-up" class="lead">Profissional de QA | Automação de Testes</p>
+    <a href="seu-curriculo.pdf" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-delay="500">Baixar Currículo</a>
   </header>
 
   <!-- Seção Sobre Mim -->
-  <section class="section" id="sobre-mim" data-aos="fade-up">
+  <section id="sobre-mim" class="text-center py-5" data-aos="fade-up">
     <h2>Sobre Mim</h2>
-    <p>Sou um profissional de QA com experiência em automação de testes e garantindo a qualidade em sistemas de software. Estou sempre em busca de aprimorar meus conhecimentos e aplicar as melhores práticas de testes.</p>
-    <a href="seu-curriculo.pdf" class="btn btn-primary">Baixar Currículo</a>
+    <p class="lead">Sou um profissional apaixonado por garantir a qualidade do software. Com experiência em automação de testes, tenho contribuído para a criação de soluções robustas e eficientes.</p>
   </section>
 
-  <!-- Seção de Skills -->
-  <section class="section" id="skills" data-aos="fade-up">
-    <h2>Habilidades</h2>
-    <div class="row">
+  <!-- Seção de Habilidades -->
+  <section id="skills" class="py-5" data-aos="fade-up">
+    <h2 class="text-center">Minhas Habilidades</h2>
+    <div class="row text-center">
       <div class="col-md-4">
         <i class="fas fa-cogs fa-3x"></i>
         <h4>Automação de Testes</h4>
-        <p>Experiência com ferramentas como Cypress, Selenium, Appium e Playwright.</p>
+        <p>Cypress, Selenium, Playwright, Appium</p>
       </div>
       <div class="col-md-4">
         <i class="fas fa-server fa-3x"></i>
         <h4>Testes de API</h4>
-        <p>Testes de APIs com Postman, RestAssured e SoapUI para garantir a integridade de dados.</p>
+        <p>Postman, RestAssured, SoapUI</p>
       </div>
       <div class="col-md-4">
         <i class="fas fa-git fa-3x"></i>
         <h4>Controle de Versão</h4>
-        <p>Uso de Git e GitHub para versionamento e controle de código em projetos colaborativos.</p>
+        <p>Git, GitHub, GitLab</p>
       </div>
     </div>
   </section>
 
   <!-- Seção de Experiência -->
-  <section class="section" id="experiencia" data-aos="fade-up">
-    <h2>Experiência Profissional</h2>
+  <section id="experiencia" class="bg-dark text-white py-5" data-aos="fade-up">
+    <h2 class="text-center">Experiência Profissional</h2>
     <ul>
-      <li><strong>Empresa 1:</strong> Descrição da função e projetos relevantes.</li>
-      <li><strong>Empresa 2:</strong> Descrição da função e projetos relevantes.</li>
+      <li><strong>Empresa 1</strong> - Descrição do trabalho e das responsabilidades.</li>
+      <li><strong>Empresa 2</strong> - Descrição do trabalho e das responsabilidades.</li>
     </ul>
   </section>
 
   <!-- Seção de Projetos -->
-  <section class="section" id="projetos" data-aos="fade-up">
-    <h2>Meus Projetos</h2>
+  <section id="projetos" class="py-5" data-aos="fade-up">
+    <h2 class="text-center">Projetos</h2>
     <div class="card-group">
       <div class="card">
-        <div class="card-header">
-          <h5>Projeto 1 - Automação de Testes</h5>
-        </div>
         <div class="card-body">
-          <p>Projeto focado em automação de testes de UI e integração com Jenkins.</p>
+          <h5 class="card-title">Projeto 1 - Automação de Testes</h5>
+          <p class="card-text">Automação de testes de integração usando Cypress e integração com Jenkins.</p>
           <a href="https://github.com/seuusuario/projeto1" class="btn btn-outline-primary"><i class="fas fa-link"></i> Acessar no GitHub</a>
         </div>
       </div>
       <div class="card">
-        <div class="card-header">
-          <h5>Projeto 2 - Testes de APIs</h5>
-        </div>
         <div class="card-body">
-          <p>Projeto focado em testes de APIs RESTful com Postman, automatizando os testes de integração.</p>
+          <h5 class="card-title">Projeto 2 - Testes de API</h5>
+          <p class="card-text">Testes de API usando Postman e automação com RestAssured.</p>
           <a href="https://github.com/seuusuario/projeto2" class="btn btn-outline-primary"><i class="fas fa-link"></i> Acessar no GitHub</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contato -->
+  <!-- Seção de Contato -->
   <section id="contato" class="text-center py-5" data-aos="fade-up">
     <h2>Contato</h2>
-    <p class="lead">Se você deseja saber mais ou discutir uma oportunidade de colaboração, entre em contato!</p>
-    <a href="mailto:seuemail@exemplo.com" class="btn btn-light btn-lg"><i class="fas fa-envelope"></i> Enviar Mensagem</a>
+    <p class="lead">Entre em contato para saber mais sobre meu trabalho ou oportunidades de colaboração.</p>
+    <a href="mailto:seuemail@exemplo.com" class="btn btn-outline-light btn-lg"><i class="fas fa-envelope"></i> Enviar Mensagem</a>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer bg-dark text-white text-center py-3">
     <p>&copy; 2024 [Seu Nome]. Todos os direitos reservados.</p>
   </footer>
 

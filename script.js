@@ -1,4 +1,2 @@
-// Inicialização do AOS (Animation on Scroll)
+// Inicializa animações do AOS
 AOS.init();
-
-// Você pode adicionar outras interações ou animações personalizadas aqui.
