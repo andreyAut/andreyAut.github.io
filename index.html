@@ -4,91 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio de QA</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Seção de Apresentação -->
-  <header class="text-center py-5">
-    <h1 data-aos="fade-down">Olá, sou [Seu Nome]</h1>
-    <p data-aos="fade-up" class="lead">Profissional de QA | Automação de Testes</p>
-    <a href="seu-curriculo.pdf" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-delay="500">Baixar Currículo</a>
+  <header>
+    <h1>Olá, sou [Seu Nome]</h1>
+    <p>Profissional de QA | Automação de Testes</p>
+    <div class="test-animation">🚀</div>
   </header>
-
-  <!-- Seção Sobre Mim -->
-  <section id="sobre-mim" class="text-center py-5" data-aos="fade-up">
+  
+  <section id="sobre-mim" class="section">
     <h2>Sobre Mim</h2>
-    <p class="lead">Sou um profissional apaixonado por garantir a qualidade do software. Com experiência em automação de testes, tenho contribuído para a criação de soluções robustas e eficientes.</p>
+    <p>[Texto sobre você]</p>
   </section>
 
-  <!-- Seção de Habilidades -->
-  <section id="skills" class="py-5" data-aos="fade-up">
-    <h2 class="text-center">Minhas Habilidades</h2>
-    <div class="row text-center">
-      <div class="col-md-4">
-        <i class="fas fa-cogs fa-3x"></i>
-        <h4>Automação de Testes</h4>
-        <p>Cypress, Selenium, Playwright, Appium</p>
-      </div>
-      <div class="col-md-4">
-        <i class="fas fa-server fa-3x"></i>
-        <h4>Testes de API</h4>
-        <p>Postman, RestAssured, SoapUI</p>
-      </div>
-      <div class="col-md-4">
-        <i class="fas fa-git fa-3x"></i>
-        <h4>Controle de Versão</h4>
-        <p>Git, GitHub, GitLab</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Seção de Experiência -->
-  <section id="experiencia" class="bg-dark text-white py-5" data-aos="fade-up">
-    <h2 class="text-center">Experiência Profissional</h2>
+  <section id="skills" class="section">
+    <h2>Skills</h2>
     <ul>
-      <li><strong>Empresa 1</strong> - Descrição do trabalho e das responsabilidades.</li>
-      <li><strong>Empresa 2</strong> - Descrição do trabalho e das responsabilidades.</li>
+      <li><i class="devicon-javascript-plain"></i> JavaScript</li>
+      <li><i class="devicon-react-original"></i> React</li>
+      <li><i class="devicon-cypress-plain"></i> Cypress</li>
+      <li><i class="devicon-docker-plain"></i> Docker</li>
     </ul>
   </section>
 
-  <!-- Seção de Projetos -->
-  <section id="projetos" class="py-5" data-aos="fade-up">
-    <h2 class="text-center">Projetos</h2>
-    <div class="card-group">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Projeto 1 - Automação de Testes</h5>
-          <p class="card-text">Automação de testes de integração usando Cypress e integração com Jenkins.</p>
-          <a href="https://github.com/seuusuario/projeto1" class="btn btn-outline-primary"><i class="fas fa-link"></i> Acessar no GitHub</a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Projeto 2 - Testes de API</h5>
-          <p class="card-text">Testes de API usando Postman e automação com RestAssured.</p>
-          <a href="https://github.com/seuusuario/projeto2" class="btn btn-outline-primary"><i class="fas fa-link"></i> Acessar no GitHub</a>
-        </div>
-      </div>
+  <section id="projetos" class="section">
+    <h2>Projetos</h2>
+    <div class="card">
+      <h3>Projeto 1</h3>
+      <p>Descrição breve do projeto</p>
+      <a href="https://github.com/seuusuario/projeto1" target="_blank">Veja no GitHub</a>
+    </div>
+    <div class="card">
+      <h3>Projeto 2</h3>
+      <p>Descrição breve do projeto</p>
+      <a href="https://github.com/seuusuario/projeto2" target="_blank">Veja no GitHub</a>
     </div>
   </section>
 
-  <!-- Seção de Contato -->
-  <section id="contato" class="text-center py-5" data-aos="fade-up">
-    <h2>Contato</h2>
-    <p class="lead">Entre em contato para saber mais sobre meu trabalho ou oportunidades de colaboração.</p>
-    <a href="mailto:seuemail@exemplo.com" class="btn btn-outline-light btn-lg"><i class="fas fa-envelope"></i> Enviar Mensagem</a>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer bg-dark text-white text-center py-3">
-    <p>&copy; 2024 [Seu Nome]. Todos os direitos reservados.</p>
+  <footer class="footer">
+    <p>© 2024 | Seu Nome - Portfólio de QA</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./script.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,141 +1,109 @@
 /* Estilo Geral */
-/* Fundo personalizado com gradientes e padrões */
 body {
-    background-color: #0D1F23; /* Cor base */
-    background-image: 
-      radial-gradient(circle at 30% 30%, rgba(105, 129, 141, 0.6), transparent 70%),
-      radial-gradient(circle at 70% 70%, rgba(173, 179, 183, 0.5), transparent 70%),
-      linear-gradient(120deg, #0D1F23 0%, #132E35 50%, #5A636A 100%);
-    background-size: cover;
-    background-blend-mode: overlay;
-    color: #f8f9fa;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  background-color: #0D1F23;
+  background-image: 
+    radial-gradient(circle at 30% 30%, rgba(105, 129, 141, 0.6), transparent 70%),
+    radial-gradient(circle at 70% 70%, rgba(173, 179, 183, 0.5), transparent 70%),
+    linear-gradient(120deg, #0D1F23 0%, #132E35 50%, #5A636A 100%);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px #000000;
+}
+
+header p {
+  font-size: 1.5rem;
+  color: #e0e0e0;
+}
+
+.test-animation {
+  display: inline-block;
+  font-size: 3rem;
+  margin-top: 30px;
+  color: #AFB3B7;
+  animation: rocket 2s infinite;
+}
+
+@keyframes rocket {
+  0% {
+    transform: translateY(0);
   }
-  
-  
-  header {
-    text-align: center;
-    padding: 100px 20px;
+  50% {
+    transform: translateY(-20px);
   }
-  
-  header h1 {
-    font-size: 3rem;
-    color: #ffffff;
-    text-shadow: 1px 1px 4px #000000;
+  100% {
+    transform: translateY(0);
   }
-  
-  header p {
-    font-size: 1.5rem;
-    color: #e0e0e0;
-  }
-  
-  header .btn {
-    background-color: #2D4A53;
-    border-color: #2D4A53;
-    color: #ffffff;
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  header .btn:hover {
-    background-color: #69818D;
-    transform: scale(1.05);
-  }
-  
-  .section {
-    padding: 60px 20px;
-  }
-  
-  h2 {
-    font-size: 2rem;
-    color: #69818D;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  ul li {
-    font-size: 1.2rem;
-    margin: 10px 0;
-    color: #E1E5E6;
-  }
-  
-  .card {
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 1px solid #2D4A53;
-    color: #f8f9fa;
-    transition: transform 0.3s;
-  }
-  
-  .card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .card-header {
-    background-color: #132E35;
-  }
-  
-  .card-body {
-    background-color: #2D4A53;
-  }
-  
-  .card-body a {
-    color: #AFB3B7;
-    text-decoration: none;
-  }
-  
-  .card-body a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-  
-  .footer {
-    background-color: #132E35;
-    color: #E1E5E6;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .footer p {
-    margin: 0;
-  }
-  
-  /* Ícone do foguete */
-  .test-animation {
-    display: inline-block;
-    font-size: 3rem;
-    color: #AFB3B7;
-    animation: rocket 2s infinite;
-    margin-top: 30px;
-  }
-  
-  @keyframes rocket {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  /* Ajustes para contraste nos botões */
-  .btn-outline-light {
-    border: 2px solid #69818D;
-    color: #f8f9fa;
-  }
-  
-  .btn-outline-light:hover {
-    background-color: #69818D;
-    color: #ffffff;
-    border-color: #ffffff;
-  }
-  
+}
+
+.section {
+  padding: 60px 20px;
+  background: rgba(13, 31, 35, 0.8); /* Transparência */
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+  color: #E1E5E6;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #AFB3B7;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #2D4A53;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.card h3 {
+  color: #E1E5E6;
+}
+
+.card a {
+  color: #AFB3B7;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #132E35;
+  color: #E1E5E6;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+  margin: 0;
+}
