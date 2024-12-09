@@ -18,7 +18,7 @@ const Skills = () => {
         </div>
         <div className="skill-item">
           <FontAwesomeIcon icon={faCode} className="skill-icon" />
-          <p>Automação</p>
+          <p>teste</p>
         </div>
         <div className="skill-item">
           <FontAwesomeIcon icon={faBug} className="skill-icon" />
