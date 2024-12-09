@@ -1,0 +1,47 @@
+#about {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo sutil para destacar a seção */
+    color: #f8f9fa;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-text {
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #5A8F99; /* Cor destacada para o título */
+    font-weight: bold;
+  }
+  
+  .about-text p {
+    color: #AFb3B7;
+    margin-bottom: 15px;
+  }
+  
+  .about-image img {
+    border-radius: 50%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .about-image img:hover {
+    transform: scale(1.05); /* Efeito de zoom suave */
+  }
+  

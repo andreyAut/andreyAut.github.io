@@ -1,0 +1,57 @@
+body {
+  background-color: #0D1F23; /* Cor base */
+  background-image: 
+    radial-gradient(circle at 30% 30%, rgba(105, 129, 141, 0.6), transparent 70%),
+    radial-gradient(circle at 70% 70%, rgba(173, 179, 183, 0.5), transparent 70%),
+    linear-gradient(120deg, #0D1F23 0%, #132E35 50%, #5A636A 100%);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.3); /* Fundo transparente com um pouco de sombra */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #f8f9fa;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #AFb3B7;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  background: rgba(0, 0, 0, 0.3); /* Fundo transparente com um pouco de sombra */
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #AFb3B7;
+  margin: 5px 0;
+}
+
+footer a {
+  color: #5A8F99;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #AFb3B7;
+}
