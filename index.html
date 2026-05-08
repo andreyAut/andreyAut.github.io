@@ -1,0 +1,210 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casa Inteligente</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      min-height: 100vh;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      width: 100%; max-width: 540px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #cbd5e1;
+      margin-bottom: 24px;
+    }
+
+    .status {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #e2e8f0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    button {
+      border: none;
+      border-radius: 14px;
+      padding: 16px 12px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      color: white;
+      transition: transform .2s ease, opacity .2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.03);
+      opacity: 0.95;
+    }
+
+    .blue { background: #2563eb; }
+    .green { background: #10b981; }
+    .purple { background: #8b5cf6; }
+    .orange { background: #f59e0b; }
+    .red { background: #ef4444; }
+    .gray { background: #64748b; }
+
+    .message {
+      margin-top: 18px;
+      padding: 12px;
+      border-radius: 12px;
+      background: rgba(16,185,129,0.15);
+      color: #bbf7d0;
+      text-align: center;
+      display: none;
+    }
+
+    .footer {
+      margin-top: 22px;
+      text-align: center;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 480px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🏠 Casa Inteligente</h1>
+    <div class="subtitle">Tudo o que você usa no dia a dia em um único NFC</div>
+
+    <div class="status" id="status"></div>
+
+    <div class="grid">
+      <button class="blue" onclick="copiarWifi()">📶 Wi‑Fi</button>
+      <button class="green" onclick="abrirCasa()">💡 Automação</button>
+      <button class="purple" onclick="abrirCompras()">🛒 Compras</button>
+      <button class="orange" onclick="pedirComida()">🍕 Delivery</button>
+      <button class="red" onclick="abrirCameras()">📹 Câmeras</button>
+      <button class="blue" onclick="abrirMusica()">🎵 Música</button>
+      <button class="orange" onclick="abrirTimer()">⏱️ Timer</button>
+      <button class="green" onclick="copiarPix()">💸 PIX</button>
+      <button class="gray" onclick="abrirNotas()">📝 Notas</button>
+      <button class="purple" onclick="abrirLimpeza()">🧹 Limpeza</button>
+    </div>
+
+    <div id="message" class="message"></div>
+
+    <div class="footer">
+      Personalize os links e use no seu chaveiro ou adesivo NFC.
+    </div>
+  </div>
+
+  <script>
+    const config = {
+      wifi: {
+        ssid: 'MinhaRedeWiFi',
+        senha: 'Senha123456'
+      },
+      pix: '43816017851',
+      urls: {
+        casa: 'https://home.google.com/',
+        compras: 'https://keep.google.com/',
+        delivery: 'https://www.ifood.com.br/',
+        cameras: 'https://home.google.com/',
+        musica: 'https://open.spotify.com/',
+        timer: 'https://www.google.com/search?q=timer+30+minutes',
+        notas: 'https://keep.google.com/',
+        limpeza: 'https://keep.google.com/'
+      }
+    };
+
+    function showMessage(text) {
+      const el = document.getElementById('message');
+      el.textContent = text;
+      el.style.display = 'block';
+      setTimeout(() => el.style.display = 'none', 3000);
+    }
+
+    function copy(text, message) {
+      navigator.clipboard.writeText(text)
+        .then(() => showMessage(message))
+        .catch(() => alert('Não foi possível copiar.'));
+    }
+
+    function openUrl(url) {
+      window.open(url, '_blank');
+    }
+
+    function copiarWifi() {
+      copy(
+        `Rede: ${config.wifi.ssid}\nSenha: ${config.wifi.senha}`,
+        '📶 Dados do Wi‑Fi copiados!'
+      );
+    }
+
+    function copiarPix() {
+      copy(config.pix, '💸 Chave PIX copiada!');
+    }
+
+    function abrirCasa() { openUrl(config.urls.casa); }
+    function abrirCompras() { openUrl(config.urls.compras); }
+    function pedirComida() { openUrl(config.urls.delivery); }
+    function abrirCameras() { openUrl(config.urls.cameras); }
+    function abrirMusica() { openUrl(config.urls.musica); }
+    function abrirTimer() { openUrl(config.urls.timer); }
+    function abrirNotas() { openUrl(config.urls.notas); }
+    function abrirLimpeza() { openUrl(config.urls.limpeza); }
+
+    const hour = new Date().getHours();
+    const status = document.getElementById('status');
+
+    let greeting = 'Olá!';
+    let suggestion = 'Escolha uma ação abaixo.';
+
+    if (hour >= 5 && hour < 12) {
+      greeting = '☀️ Bom dia!';
+      suggestion = 'Que tal revisar a agenda e a lista de compras?';
+    } else if (hour >= 12 && hour < 18) {
+      greeting = '🌤️ Boa tarde!';
+      suggestion = 'Use o timer para cozinhar ou abra o delivery.';
+    } else {
+      greeting = '🌙 Boa noite!';
+      suggestion = 'Relaxe com música e verifique as câmeras.';
+    }
+
+    status.innerHTML = `<strong>${greeting}</strong><br>${suggestion}`;
+  </script>
+</body>
+</html>
